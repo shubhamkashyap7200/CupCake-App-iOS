@@ -11,6 +11,7 @@
 		515C161E2ADFC59800AC08FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515C161D2ADFC59800AC08FA /* ContentView.swift */; };
 		515C16202ADFC59900AC08FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515C161F2ADFC59900AC08FA /* Assets.xcassets */; };
 		515C16232ADFC59900AC08FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515C16222ADFC59900AC08FA /* Preview Assets.xcassets */; };
+		516703932AE004630082C4FB /* Response_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516703922AE004630082C4FB /* Response_Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		515C161D2ADFC59800AC08FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		515C161F2ADFC59900AC08FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		515C16222ADFC59900AC08FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		516703922AE004630082C4FB /* Response_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response_Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				515C161B2ADFC59800AC08FA /* CupCake_App_iOSApp.swift */,
 				515C161D2ADFC59800AC08FA /* ContentView.swift */,
+				516703942AE004680082C4FB /* Data Models */,
 				515C161F2ADFC59900AC08FA /* Assets.xcassets */,
 				515C16212ADFC59900AC08FA /* Preview Content */,
 			);
@@ -65,6 +68,14 @@
 				515C16222ADFC59900AC08FA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		516703942AE004680082C4FB /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				516703922AE004630082C4FB /* Response_Model.swift */,
+			);
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				515C161E2ADFC59800AC08FA /* ContentView.swift in Sources */,
+				516703932AE004630082C4FB /* Response_Model.swift in Sources */,
 				515C161C2ADFC59800AC08FA /* CupCake_App_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
