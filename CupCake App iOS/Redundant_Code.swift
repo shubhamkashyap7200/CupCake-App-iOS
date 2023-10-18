@@ -1,11 +1,10 @@
 //
-//  ContentView.swift
+//  Redundant_Code.swift
 //  CupCake App iOS
 //
 //  Created by Shubham on 10/18/23.
 //
 
-import SwiftUI
 
 //class User: ObservableObject, Codable {
 //    @Published var name = "Shubham Kashyap"
@@ -13,63 +12,46 @@ import SwiftUI
 //    enum CodingKeys: String, CodingKey {
 //        case name = "name"
 //    }
-//    
+//
 //    required init(from decoder: Decoder) throws {
 //        let container = try decoder.container(keyedBy: CodingKeys.self)
 //        name = try container.decode(String.self, forKey: .name)
 //    }
-//        
+//
 //    func encode(to encoder: Encoder) throws {
 //        var container = encoder.container(keyedBy: CodingKeys.self)
 //        try container.encode(name, forKey: .name)
 //    }
-//    
+//
 //}
 
 
+//func loadData() async {
+//    guard let url = URL(string: "https://itunes.apple.com/search?term=taylor+swift&entity=song") else {
+//        print("Invalid URL")
+//        return
+//    }
+//
+//    do {
+//        let (data, _) = try await URLSession.shared.data(from: url)
+//        print(data)
+//
+//        if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
+//            print(decodedResponse)
+//            results = decodedResponse.results
+//        }
+//    } catch {
+//        print(error.localizedDescription)
+//    }
+//}
 
-struct ContentView: View {
-    // MARK: Propeties
-    @State private var results = [Result]()
-//    @State private var userName = ""
-//    @State private var email = ""
-    
-    // MARK: Body
-    var body: some View {
-        Image(systemName: "mail.fill")
-    }
-    
-    
-    func loadData() async {
-        guard let url = URL(string: "https://itunes.apple.com/search?term=taylor+swift&entity=song") else {
-            print("Invalid URL")
-            return
-        }
-        
-        do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            print(data)
-            
-            if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
-                print(decodedResponse)
-                results = decodedResponse.results
-            }
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-}
-
-#Preview {
-    ContentView()
-}
 
 //Form {
 //    Section {
 //        TextField("Username", text: $userName)
 //        TextField("Email", text: $email)
 //    }
-//    
+//
 //    Section {
 //        Button("Create account") {
 //            print("Creating account")
@@ -103,7 +85,8 @@ struct ContentView: View {
 //    .task {
 //        await loadData()
 //    }
-//    
-//    
+//
+//
 //    .navigationTitle("Songs App")
 //}
+
