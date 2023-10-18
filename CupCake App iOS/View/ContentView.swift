@@ -50,7 +50,7 @@ struct ContentView: View {
                 }
             }
             
-            .navigationTitle("Icecream Ordering")
+            .navigationTitle("Cupcake Ordering")
         }
     }
     
